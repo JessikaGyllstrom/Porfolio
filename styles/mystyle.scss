@@ -1,0 +1,16 @@
+@use 'fonts';
+@import 'fonts';
+@import 'colors';
+@import 'header';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $main-font;
+    color: $white;
+    line-height: 1.5;
+}
+body {
+    background-color:$blackish;
+}
