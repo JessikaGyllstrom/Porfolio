@@ -1,0 +1,105 @@
+@use 'fonts';
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    padding-top: 130px;
+}
+.card {
+    letter-spacing: 1.7px;
+    width: 60%;
+    min-height: 550px;
+    display: flex;
+    background-color: $blackish;
+    flex-direction: row;
+    display: flex;
+    padding-left: 40px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px $teal;
+}
+.card__text {
+    margin-right: 25px;
+    width: 55%;
+    padding: 10px;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    border-right: 1px solid var(--dark-red-color);
+}
+.card__text span {
+    color: $white;
+    font-size: 30px;
+    padding: 5px;
+    margin: 20px 0;
+    font-weight: 400;
+}
+.card__text .tag {
+    opacity: 0.5;
+    font-size: 15px;
+}
+.card__text h1 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 35px;
+    font-weight: 600;
+}
+.card__text h5 {
+    font-size: 20px;
+    font-weight: 300;
+}
+.card__image img {
+    flex: 1;
+    max-height: 270px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 5px $teal;
+}
+.card__image:hover {
+    transform: scale(1.08);
+    transition: 0.5s;
+}
+.card__iconbox {
+    display: flex;
+    min-height: 70px;
+    align-items: flex-end;
+    justify-content: center;
+}
+.card__icons {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+.card__icons i {
+    text-align: center;
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 50%;
+    border: 2px solid $teal;
+}
+.card__cv {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.card__cv h6 {
+    font-size: 15px;
+    margin: 20px 0;
+    font-weight: 300;
+    margin-right: 2px;
+}
+.card__cv i {
+    margin-top: -13px;
+    font-size: 25px;
+    color: $teal;
+}
+.card__cv i:hover {
+    color: $white;
+    cursor: pointer;
+}
+.card__icons i:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}

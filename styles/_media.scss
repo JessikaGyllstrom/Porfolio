@@ -1,0 +1,33 @@
+@media  screen and (max-width: 1227px) {
+    .card {
+        width: 70%;
+    }
+}
+@media screen and(max-width: 870px) {
+    .card {
+        width: 90%;
+    }
+}
+@media screen and(max-width: 768px) {
+    .card {
+        flex-direction: column;
+    }
+    .card__text {
+        margin-top: 40px;
+    }
+    .card__image {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+    .menu {
+        display: flex;
+    }
+  
+}

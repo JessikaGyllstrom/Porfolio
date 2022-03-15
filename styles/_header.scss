@@ -14,8 +14,10 @@ nav {
     z-index: 99;
     background-color: $blackish;
     padding: 16px 32px;
-    border-bottom: 3px solid $teal;
     letter-spacing: 1.8px;
+}
+nav img {
+    max-height: 50px;
 }
 .hamburger {
     display: block;
@@ -67,8 +69,8 @@ nav {
     margin: 0 16px;
     text-decoration: none;
     transition: 0.4s;
-    padding: 8px 16px;
-    border-radius: 99px;
+    padding: 8px 4px;
+    border-radius: 89px;
 }
 .mobile-nav {
     position: fixed;
