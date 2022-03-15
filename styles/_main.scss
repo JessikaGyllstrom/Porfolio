@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    min-height: 100vh;
     flex-direction: column;
     padding-top: 130px;
 }
@@ -102,4 +103,15 @@
 .card__icons i:hover {
     transform: scale(1.1);
     transition: 0.5s;
+}
+.main__scroll {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    min-height: 150px;
+    margin-bottom: 15px;
+}
+.main__scroll i {
+    font-size: 25px;
+    opacity: 0.6;
 }

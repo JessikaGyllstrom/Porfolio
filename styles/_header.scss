@@ -1,5 +1,5 @@
 
-.container {
+.nav-container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -105,12 +105,4 @@ nav img {
 }
 .menu a:hover {
     color: $teal;
-}
-@media (min-width: 768px) {
-    .hamburger {
-        display: none;
-    }
-    .menu {
-        display: flex;
-    }
 }

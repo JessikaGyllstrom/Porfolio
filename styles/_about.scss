@@ -1,0 +1,25 @@
+@use 'mixins';
+
+.container {
+    padding: 70px 100px 35px;
+    display: flex;
+    background-color: $mediumdark;
+    justify-content: center;
+}
+.about {
+    width: 60%;
+}
+.about__title h2 {
+    @include title;
+    color: $blackish;
+}
+.about__title h4 {
+    @include small-title;
+    color: $blackish;   
+
+}
+.about p {
+    @include small-text;
+    padding-top: 15px;
+    color: $blackish;
+}
