@@ -1,0 +1,63 @@
+@use 'mixins';
+@use 'colors';
+
+.artcontainer {
+   @include containerpadd-lg;
+   display: flex;
+   justify-content:center;
+}
+.angry-grid {
+   max-height: 1000px;
+
+   width: 60%;
+   display: grid; 
+
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   
+   gap: 30px;
+   
+}
+.angry-grid img {
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+
+}
+
+  
+#item-0 {
+
+   grid-row-start: 1;
+   grid-column-start: 1;
+
+   grid-row-end: 4;
+   grid-column-end: 3;
+   
+}
+#item-1 {
+
+   grid-row-start: 1;
+   grid-column-start: 3;
+
+   grid-row-end: 4;
+   grid-column-end: 5;
+   
+}
+#item-2 {
+
+   grid-row-start: 4;
+   grid-column-start: 1;
+
+   grid-row-end: 4;
+   grid-column-end: 3;
+   
+}
+#item-3 {
+   grid-row-start: 4;
+   grid-column-start: 3;
+
+   grid-row-end: 4;
+   grid-column-end: 5;
+   
+}
