@@ -1,7 +1,7 @@
 @use 'mixins';
 
 .container {
-    padding: 70px 100px 35px;
+    @include containerpadd-lg;
     display: flex;
     background-color: $mediumdark;
     justify-content: center;
@@ -16,10 +16,9 @@
 .about__title h4 {
     @include small-title;
     color: $blackish;   
-
 }
 .about p {
     @include small-text;
-    padding-top: 15px;
     color: $blackish;
+    padding-top: 10px;
 }

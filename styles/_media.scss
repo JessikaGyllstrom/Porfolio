@@ -1,11 +1,27 @@
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+    .menu {
+        display: flex;
+    }
+}
+
 @media  screen and (max-width: 1227px) {
     .card {
         width: 70%;
     }
+    .about__skillbox {
+
+        flex-direction: column;
+    }
 }
-@media screen and(max-width: 870px) {
+@media screen and(max-width: 930px) {
     .card {
         width: 90%;
+    }
+    .about__skillbox {
+        min-width: 600px;
     }
 }
 @media screen and(max-width: 768px) {
@@ -19,15 +35,7 @@
         margin-top: 30px;
         margin-bottom: 30px;
     }
-
-}
-
-@media (min-width: 768px) {
-    .hamburger {
-        display: none;
+    .about__skillbox {
+        flex-direction: column !important;
     }
-    .menu {
-        display: flex;
-    }
-  
 }

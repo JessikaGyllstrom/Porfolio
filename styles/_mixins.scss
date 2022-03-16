@@ -8,8 +8,25 @@
     letter-spacing: 1.7px;
     font-weight: 600;
 }
+@mixin smallest-title {
+    font-size: 15px;
+    letter-spacing: 1.7px;
+    font-weight: 300;
+}
 @mixin small-text {
     font-size: 17px;
     letter-spacing: 1.2px;
     font-weight: 400;
+}
+@mixin containerpadd-lg {
+    padding: 60px 40px 60px 40px;
+}
+@mixin containerpadd-md {  
+    padding: 20px 40px 70px 40px;   
+}
+@mixin tealshadow {
+    box-shadow: 0px 0px 5px 5px $teal;
+}
+@mixin tealshadow-s {
+    box-shadow: 0px 0px 2px 2px $teal;
 }

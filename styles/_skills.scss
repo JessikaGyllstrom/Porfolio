@@ -1,0 +1,56 @@
+@use 'mixins';
+
+.containerskills {
+    @include containerpadd-md;
+}
+.skills__title {
+    @include small-title;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+.about__skills {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.about__skillbox {
+    display: inline-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+.about__skills h2 {
+    @include title;
+    color: $white;
+    text-align: center;
+    width: 100%;
+}
+.about__skill {
+    @include tealshadow-s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark;
+    min-width: 120px;
+    min-height: 120px;
+    border-radius: 10px;
+    margin: 5px 15px 10px 5px;
+}
+.about__skill i {
+    font-size: 35px;
+}
+.about__skill h6 {
+    @include smallest-title;
+    padding-top: 10px;
+}
+.about__skill:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
