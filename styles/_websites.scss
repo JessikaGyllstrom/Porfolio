@@ -2,53 +2,26 @@
 @use 'colors';
 
 .websites {
+  @include containerpadd-lg;
   display: flex;
-  justify-content: center;
-}
-.webgridcontainer {
-  display: flex;
-  justify-content: center;
-}
-.webgridcontainer .webbgrid {
-  width: 80%;
-  display: grid; 
-  grid-template-rows: 100px 1fr 1fr 1fr 100px 1fr 1fr 100px 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-  gap: 20px;
-  height: 100%;
-}
-.webgridcontainer img{
-  width: 100%;
-  height: 100%;
-} 
-.webbgrid-text {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   text-align: center;
-  font-size: 20px;
-  font-weight: 200;
+  flex-direction: column;
 }
-.webbgrid-text h3 {
-  @include small-title;
-  font-weight: bold;
+.websites__title {
+  @include titlepadd-lg;
+  width: 100%;
 }
-.webbgrid-text h5 {
-  @include small-title;
+.carousel-container {
+  display: flex;
+  justify-content: center;
 }
-.websitescontainer .title h2 {
+.carousel  {
+  width: 50%;
+}
+.websites__title h2 {
   @include title;
   margin-bottom: 10px;
-}
-.websitescontainer .title h5 {
-  font-weight: 300;
-}
-.websitescontainer .title {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 40px;
-  justify-content: center;
-  text-align: center;
 }
 .webb__info {
   margin-top: 20px;
@@ -59,87 +32,13 @@
 }
 .webb__info h5 {
   font-weight: 200;
-  font-size: 20px;
+  font-size: 15px;
   margin-bottom: 10px;
 }
 .webb__info i {
-  font-size: 27px;
-}
-.webbutton {
-  @include buttonstyle;
+  font-size: 35px;
+  padding: 15px 0px 15px 0px;
 }
 .webbutton:hover {
-  @include buttonhover;
-}
-#it-00 {
-  background-color: $mediumdark;
-  grid-row-start: 1;
-  grid-column-start: 2;
-  grid-column-end: 8;
-}
-#it-0 {
-  grid-row-start: 2;
-  grid-column-start: 2;
-  grid-row-end: 2;
-  grid-column-end: 8; 
-}
-#it-1 {
-  grid-row-start: 3;
-  grid-column-start: 1;
-  grid-column-end: 5;
-}
-#it-2 {
-  grid-row-start: 3;
-  grid-column-start: 5;
-  grid-column-end: 9;
-}
-#it-3 {
-  grid-row-start: 4;
-  grid-column-start: 1;
-  grid-column-end: 5;
-}
-/*our services*/
-#it-4 {
-  grid-row-start: 4;
-  grid-column-start: 5;
-  grid-column-end: 9;
-}
-#it-01 {
-  background-color: $mediumdark;
-  grid-row-start: 5;
-  grid-column-start: 2;
-  grid-column-end: 8;
-}
-/*maven first*/
-#it-5 {
-  grid-row-start: 6;
-  grid-column-start: 2;
-  grid-column-end: 8;
-}
-#it-6 {
-  grid-row-start: 7;
-  grid-column-start: 1;
-  grid-column-end: 5;
-}
-#it-7 {
-  grid-row-start: 7;
-  grid-column-start: 5;
-  grid-column-end: 9;
-}
-#it-02 {
-  background-color: $mediumdark;
-  grid-column-start: 2;
-  grid-column-end: 8;
-}
-#it-8 {
-  grid-column-start: 2;
-  grid-column-end: 8;
-}
-#it-9 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-}
-#it-10 {
-  grid-column-start: 5;
-  grid-column-end: 9;
+  @include iconhover;
 }

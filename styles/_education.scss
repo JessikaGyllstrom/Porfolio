@@ -1,0 +1,52 @@
+@use 'mixins';
+
+
+.education__titlebox {
+    @include titlepadd-lg;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.education__title {
+    display: flex;
+}
+.education__title h2 {
+    @include title;  
+}
+.education {
+    display: flex;
+    justify-content: center;
+}
+.education__first {
+    width: 40%;
+}
+.education__last {
+    width: 40%;
+}
+.education__icon {
+    display: flex;
+    justify-content: center;
+}
+.education__programs, 
+.education__courses {
+    display: flex;
+    justify-content: center;
+}
+.education__programs, 
+.education__courses h5 {
+    @include titlepadd-lg;
+}
+
+.education {
+    p {
+        font-weight: 300;
+    }
+    i {
+        font-size: 50px;
+    }
+}
+.education__items {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
