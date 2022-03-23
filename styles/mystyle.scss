@@ -9,8 +9,8 @@
 @import 'skills';
 @import 'websites';
 @import 'layoutgrid';
-
-
+@import 'artgrid';
+@import 'footer';
 
 * {
     margin: 0;
@@ -20,6 +20,17 @@
     color: $white;
     line-height: 1.5;
 }
+html {
+    height: 100%;
+}
+html,
+  body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+  
+  
 body {
     background-color: $blackish;
+    width: 100%;
 }

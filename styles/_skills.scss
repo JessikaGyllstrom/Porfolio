@@ -3,11 +3,19 @@
 .containerskills {
     @include containerpadd-md;
 }
+.aboutcontainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .skills__title {
-    @include small-title;
+    @include title;
     text-align: center;
     margin-top: 20px;
     padding: 20px 0;
+}
+.skills__title h2 {
+    @include title;
 }
 .about__skills {
     display: flex;
@@ -36,13 +44,13 @@
     justify-content: center;
     align-items: center;
     background-color: $dark;
-    min-width: 120px;
-    min-height: 120px;
+    min-width: 170px;
+    min-height: 170px;
     border-radius: 10px;
     margin: 5px 15px 10px 5px;
 }
 .about__skill i {
-    font-size: 35px;
+    font-size: 60px;
 }
 .about__skill h6 {
     @include smallest-title;

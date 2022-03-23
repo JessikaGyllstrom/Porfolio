@@ -1,28 +1,20 @@
-@media (min-width: 768px) {
-    .hamburger {
-        display: none;
-    }
-    .menu {
-        display: flex;
-    }
-}
+@use 'mixins';
 
-@media  screen and (max-width: 1227px) {
+@media  screen and (max-width: 1327px) {
     .card {
         width: 70%;
     }
     .about__skillbox {
-
-        flex-direction: column;
-    }
+        min-width: 780px;
+    } 
 }
 @media screen and(max-width: 930px) {
     .card {
         width: 90%;
     }
     .about__skillbox {
-        min-width: 600px;
-    }
+        flex-direction: column;
+    }   
 }
 @media screen and(max-width: 768px) {
     .card {
@@ -37,5 +29,21 @@
     }
     .about__skillbox {
         flex-direction: column !important;
+    }
+    .card__text {
+        width: 90%;
+    }
+    .about {
+        min-width: 350px;
+    } 
+
+}
+
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+    .menu {
+        display: flex;
     }
 }

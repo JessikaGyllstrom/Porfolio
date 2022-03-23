@@ -1,17 +1,31 @@
 @mixin title {
-    font-size: 30px;
+    font-size: 25px;
     letter-spacing: 2px;
-    font-weight: 600;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: underline solid $teal;
+    text-underline-offset: 12px;
+    margin-bottom: 15px;
+}
+@mixin title-mobile {
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: underline solid $teal;
+    text-underline-offset: 12px;
+    margin-bottom: 15px;
 }
 @mixin small-title {
     font-size: 20px;
     letter-spacing: 1.7px;
-    font-weight: 400;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 @mixin smallest-title {
     font-size: 15px;
     letter-spacing: 1.7px;
-    font-weight: 300;
+    font-weight: 200;
 }
 @mixin small-text {
     font-size: 17px;
@@ -29,4 +43,20 @@
 }
 @mixin tealshadow-s {
     box-shadow: 0px 0px 2px 2px $teal;
+}
+@mixin buttonstyle {
+    box-shadow: 0px 0px 2px 2px $blackish;
+    background-color: $mediumdark;
+    color: $white;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    min-height: 40px;
+    min-width: 130px;
+    max-width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin buttonhover {
+    background-color: $teal;
 }

@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link to normalize.css -->
     <link rel="stylesheet" href="/styles/normalize.css">
+    <!--browser-tab icon-->
+    <link rel="icon" href="/images/logo-2.ico"  type="image/gif">
+    <link rel="icon" href="/images/logo2.png">
     <!-- link to icons -->
-    <script src="https://kit.fontawesome.com/7156552e14.js" crossorigin="anonymous"></script>    <!-- link to fonts -->
+    <script src="https://kit.fontawesome.com/7156552e14.js" crossorigin="anonymous"></script>    
+    <!-- link to fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&family=Poppins:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/mystyle.css">
     <title>Jessika Gyllström</title>
@@ -16,12 +20,13 @@
     <!--navigation-->
     <nav>
         <div class="nav-container">
-            <a href="index.html"><img src="/images/logo.png"></a>
+            <a href="index.html"><img src="/images/logo.png" alt="personal logo"></a>
             <div class="menu">
                 <a href="#home" class="is-active">Home</a>
                 <a href="#about">About</a>
                 <a href="#websites">Websites</a>
                 <a href="#art">Art</a>
+
             </div>
             <button class="hamburger">
                 <span></span>
@@ -36,9 +41,7 @@
         <a href="#home" class="is-active">Home</a>
         <a href="#about">About</a>
         <a href="#websites">Websites</a>
-        <a href="#apps">Apps</a>
         <a href="#art">Art</a>
-        <a href="#contact">Contact</a>
     </nav>
     <!-- mobile nav end -->
     <main>
@@ -54,18 +57,18 @@
                     <h5>Student at IT-Tech for Women</h5>
                     <div class="card__iconbox">
                         <div class="card__icons">
-                            <a href="#"><i class="fa-brands fa-github"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/jessikagyllstrom" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/jessika-gyllstr%C3%B6m-226b9a1b7"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="http://instagram.com/artsyjessika"><i class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
                     <div class="card__cv">
                         <h6>Download CV:</h6>
-                            <i class="fa-solid fa-cloud-arrow-down"></i>
+                        <a href="https://www.icloud.com/iclouddrive/082-R-SUARs_9aGSVEGgBRxgg#CV-jessikagyllstro%CC%88m-2022"><i class="fa-solid fa-cloud-arrow-down"></i></a>
                     </div>
                 </div>
                 <div class="card__image">
-                    <img src="/images/me.jpeg">
+                    <img src="/images/me.jpeg"  alt="profile picture">
                 </div>
             </div>
             <div class="main__scroll">
@@ -99,14 +102,13 @@
         <div class="skills__title">
             <h2>Skills</h2>
         </div>
+        <div class="aboutcontainer">
         <div class="about__skills">
             <div class="about__skillbox">
-
                 <div class="about__skill">
                     <i class="fa-brands fa-html5"></i>                    
                     <h6>HTML</h6>
                 </div>
-
                 <div class="about__skill">
                     <i class="fa-brands fa-css3"></i>
                     <h6>CSS</h6>
@@ -145,185 +147,84 @@
                         </div>  
                     </div>       
                 </div>
+            </div>
          </div>
-    <div class="websitecontainer" id="websites">
-        <div class="skills__title">
-            <h2>Websites</h2>
-        </div>
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
+    <!-- websites start -->
+    <div class="websitescontainer" id="websites">
+    <div class="websites title">
+        <h2>Websites</h2>
+    </div>
+    <div class="webgridcontainer">
+        <div class="webbgrid">
 
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="/images/maven1.jpg" style="width:100%">
-            <div class="text">
-                <h5>Maven Studio</h5>
-                <p>Website for architect firm</p>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
+            <div id="it-00" class="webbgrid-text">
+                <h3>ARTIGNITE</h3>
+                <h5>Art-firm website</h5>
             </div>
+            <div id="it-0"><img src="/images/artignite1.jpg" alt="art website" class="image"></div>
+            <div id="it-1"><img src="/images/artignite2.jpg" alt="art website"  class="image"></div>
+            <div id="it-2"><img src="/images/artignite3.jpg" alt="art website"  class="image"></div>
+            <div id="it-3"><img src="/images/artignite5.jpg" alt="art website"  class="image"></div>
+            <div id="it-4"><img src="/images/artignite6.jpg" alt="art website"  class="image"></div>
+            <div id="it-01" class="webbgrid-text">
+                <h3>Maven</h3>
+                <h5>Architecht-firm website</h5>
             </div>
-        
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="/images/maven2.jpg" style="width:100%">
-                <div class="text">
-                    <h5>Maven Studio</h5>
-                    <p>Website for architect firm</p>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                </div>
+            <div id="it-5"><img src="/images/maven1.jpg" alt="Architecht-firm website" class="image"></div>
+            <div id="it-6"><img src="/images/maven2.jpg" alt="Architecht-firm website" class="image"></div>
+            <div id="it-7"><img src="/images/maven3.jpg"  alt="Architecht-firm website" class="image"></div>
+            <div id="it-02" class="webbgrid-text">
+                <h3>Lush Homes</h3>
+                <h5>Furniture company website</h5>
             </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="/images/maven3.jpg" style="width:100%">
-                <div class="text">
-                    <h5>Maven Studio</h5>
-                    <p>Website for architect firm</p>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-
-
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="/images/art1.jpg" style="width:100%">
-                <div class="text">
-                    <h5>ArtIgnite</h5>
-                    <p>Website for art firm</p>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 6</div>
-                <img src="/images/art2.jpg" style="width:100%">
-                <div class="text">
-                    <h5>ArtIgnite</h5>
-                    <p>Website for art firm</p>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 6</div>
-                <img src="/images/art3.jpg" style="width:100%">
-                <div class="text">
-                    <h5>ArtIgnite</h5>
-                    <p>Website for art firm</p>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">4 / 6</div>
-                <img src="/images/art4.jpg" style="width:100%">
-                <div class="text">
-                    <h5>ArtIgnite</h5>
-                    <p>Website for art firm</p>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">5 / 6</div>
-                <img src="/images/art5.jpg" style="width:100%">
-                <div class="text">
-                    <h5>ArtIgnite</h5>
-                    <p>Website for art firm</p>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">6 / 6</div>
-                <img src="/images/art6.jpg" style="width:100%">
-                <div class="text">
-                    <h5>ArtIgnite</h5>
-                    <p>Website for art firm</p>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="/images/web9.png" style="width:100%">
-                <div class="text">
-                    <h5>Lush Homes</h5>
-                    <p>Website selling furniture</p>
-                </div>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="/images/web10.png" style="width:100%">
-                <div class="text">
-                    <h5>Lush Homes</h5>
-                    <p>Website selling furniture</p>
-                </div>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="/images/web11.png" style="width:100%">
-                <div class="text">
-                    <h5>Lush Homes</h5>
-                    <p>Website selling furniture</p>
-                </div>
-            </div>
-
-
-
-        
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="/images/phonox.png" style="width:100%">
-                <div class="text">
-                    <h5>Phonox</h5>
-                    <p>Website selling headphones</p>
-                </div>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="/images/phonox2.png" style="width:100%">
-                <div class="text">
-                    <h5>Phonox</h5>
-                    <p>Website selling headphones</p>
-                </div>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="/images/phonox3.png" style="width:100%">
-                <div class="text">
-                    <h5>Phonox</h5>
-                    <p>Website selling headphones</p>
-                </div>
-            </div>
-        
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-        
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
+            <div id="it-8"><img src="/images/lush1.png" alt="furniture company website" class="image"></div>
+            <div id="it-9"><img src="/images/lush2.png"  alt="furniture company website"  class="image"></div>
+            <div id="it-10"><img src="/images/lush3.png"  alt="furniture company website"  class="image"></div>
         </div>
     </div>
-    <div class="websites__layout">
-
+    <div class="webb__info">
+        <h5>Find code & more projects at my github:</h5>
+        <div class="webbutton"><a href="https://github.com/jessikagyllstrom" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
     </div>
-    <!-- websites end -->
-    <!-- art start -->
-    <div class="skills__title">
+    </div>
+    <!-- layouts start -->
+    <div class="layouts__title">
         <h2>Layouts</h2>
     </div>
-    <div class="artcontainer">
-        <div class="angry-grid">
-            <div id="item-0"><img src="/images/design2.png"></div>
-            <div id="item-1"><img src="/images/design4.png"></div>
-            <div id="item-2"><img src="/images/design1.png"></div>
-            <div id="item-3"><img src="/images/design3.png"></div>
+    <div class="layoutcontainer">
+        <div class="layoutgrid">
+            <div id="item0"><img src="/images/design2.png" alt="figma layout"></div>
+            <div id="item1"><img src="/images/design4.png" alt="figma layout"></div>
+            <div id="item2"><img src="/images/design1.png" alt="figma layout"></div>
+            <div id="item3"><img src="/images/design3.png" alt="figma layout"></div>
           </div>
     </div>
-
-
+    <!-- layouts end -->
+    <div class="art__container" id="art">
+        <div class="skills__title">
+            <h2>Art</h2>
+        </div>
+        <div class="artgrid">
+            <div id="item-0"><img src="/images/artwork7.jpeg" alt="artwork"></div>
+            <div id="item-1"><img src="/images/artwork1.jpeg" alt="artwork"></div>
+            <div id="item-2"><img src="/images/artwork10.jpeg" alt="artwork"></div>
+            <div id="item-3"><img src="/images/artwork4.jpeg" alt="artwork"></div>
+            <div id="item-4"><img src="/images/artwork5.jpeg" alt="artwork"></div>
+            <div id="item-5"><img src="/images/artwork12.jpeg" alt="artwork"></div>
+          </div>
+          <div class="art__info">
+            <h5>More art at my instagram:</h5>
+            <div class="artbutton"><a href="http://instagram.com/artsyjessika"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="#" class="top"><i class="fa-solid fa-circle-arrow-up"></i></a>
+        <div class="footer-bottom">
+            <p>copyright &copy; <a href="#">Jessika Gyllström</a>  </p>
+        </div>
+    </footer>
     <script src="/js/script.js"></script>
 </body>
 </html>
