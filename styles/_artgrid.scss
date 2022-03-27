@@ -5,14 +5,12 @@
 }
 .artgrid__container {
     max-height: 200px;
-
 }
 .artgrid {
     display: grid; 
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
-
 }
 .artgrid img {
     width: 100%;
@@ -26,18 +24,13 @@
    align-items: center;
 }
 .art__info h5 {
+   @include titlepadd-lg;
    font-weight: 200;
    font-size: 20px;
    margin-bottom: 10px;
 }
 .art__info i {
-   font-size: 27px;
-}
-.artbutton {
-    @include buttonstyle;
-}
-.artbutton:hover {
-   @include buttonhover;
+   font-size: 33px;
 }
 #item-0 {
      grid-row-start: 1;

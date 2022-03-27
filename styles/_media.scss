@@ -19,11 +19,18 @@
 @media screen and(max-width: 768px) {
     .card {
         flex-direction: column;
+        justify-content: center;
     }
     .card__text {
         margin-top: 40px;
     }
+    .card__icons {
+        width: 70%;
+    }
     .card__image {
+        display: flex;
+        justify-content: center;
+        width: 100%;
         margin-top: 30px;
         margin-bottom: 30px;
     }
@@ -36,6 +43,16 @@
     .about {
         min-width: 350px;
     } 
+    .education {
+        flex-direction: column;
+        align-items: center;
+    }
+    .carousel  {
+        min-width: 500px;
+    }
+    .layoutgrid {
+        min-width: 500px;
+    }
 
 }
 
