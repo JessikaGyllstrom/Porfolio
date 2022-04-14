@@ -42,6 +42,8 @@
 .webbutton:hover {
   @include iconhover;
 }
-.fa-angle-left {
+.fa-angle-left, 
+.fa-angle-right {
+  font-size: 40px;
   color: $teal;;
 }
