@@ -48,8 +48,9 @@
     box-shadow: 0px 0px 2px 2px $teal;
 }
 @mixin iconhover {
-    transform: scale(1.1);
-    transition: 0.5s;  
+    color: $teal;
+    transform: rotate(360deg);
+    -webkit-transition: -webkit-transform 1s ease-in;
 }
 
 

@@ -6,6 +6,9 @@
 .artgrid__container {
     max-height: 200px;
 }
+.artbutton i:hover {
+   @include iconhover;
+}
 .artgrid {
     display: grid; 
     grid-template-rows: 1fr 1fr;

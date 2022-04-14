@@ -117,6 +117,10 @@
     font-size: 25px;
     opacity: 0.6;
 }
+.main__scroll i:hover {
+    opacity: 1;
+    color: $teal;
+}
 .top {
     --offset: 50px; 
     float: right;

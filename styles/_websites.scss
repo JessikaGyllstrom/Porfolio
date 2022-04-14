@@ -39,11 +39,12 @@
   font-size: 35px;
   padding: 15px 0px 15px 0px;
 }
-.webbutton:hover {
+.webbutton i:hover {
   @include iconhover;
 }
 .fa-angle-left, 
 .fa-angle-right {
   font-size: 40px;
-  color: $teal;;
+  color: $teal;
+  transform: rotate(360deg);
 }

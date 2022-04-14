@@ -298,10 +298,10 @@ nav img {
 }
 
 .card__icons i:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  color: #4ac7c1;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 1s ease-in;
 }
 
 .main__scroll {
@@ -322,6 +322,11 @@ nav img {
 .main__scroll i {
   font-size: 25px;
   opacity: 0.6;
+}
+
+.main__scroll i:hover {
+  opacity: 1;
+  color: #4ac7c1;
 }
 
 .top {
@@ -685,17 +690,19 @@ nav img {
   padding: 15px 0px 15px 0px;
 }
 
-.webbutton:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+.webbutton i:hover {
+  color: #4ac7c1;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 1s ease-in;
 }
 
 .fa-angle-left,
 .fa-angle-right {
   font-size: 40px;
   color: #4ac7c1;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .layouts__title {
@@ -1215,6 +1222,13 @@ nav img {
 
 .artgrid__container {
   max-height: 200px;
+}
+
+.artbutton i:hover {
+  color: #4ac7c1;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 1s ease-in;
 }
 
 .artgrid {
