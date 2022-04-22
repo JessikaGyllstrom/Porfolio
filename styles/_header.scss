@@ -20,6 +20,9 @@ nav img {
     max-height: 50px;
     max-width: 50px;
 }
+nav img:hover {
+    @include logohover;
+}
 .hamburger {
     display: block;
     position: relative;
@@ -108,4 +111,12 @@ nav img {
 }
 .menu a:hover {
     color: $teal;
+}
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+    .menu {
+        display: flex;
+    }
 }

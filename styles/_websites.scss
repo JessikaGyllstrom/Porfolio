@@ -41,6 +41,7 @@
 }
 .webbutton i:hover {
   @include iconhover;
+  border: none;
 }
 .fa-angle-left, 
 .fa-angle-right {

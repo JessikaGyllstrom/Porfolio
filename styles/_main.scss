@@ -12,7 +12,6 @@
 }
 .card {
     @include tealshadow;
-    letter-spacing: 1.7px;
     width: 60%;
     min-height: 550px;
     display: flex;
@@ -25,8 +24,8 @@
 }
 .card__text {
     margin-right: 25px;
-    width: 55%;
-    padding: 10px;
+    width: 100%;
+    padding: 10px 10px 10px 25px;
     border-top-left-radius: var(--border-radius);
     border-bottom-left-radius: var(--border-radius);
     border-right: 1px solid var(--dark-red-color);
@@ -45,7 +44,7 @@
 .card__text h1 {
     font-size: 40px;
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: 1.5;
     line-height: 35px;
     font-weight: 600;
 }
@@ -53,11 +52,16 @@
     font-size: 20px;
     font-weight: 300;
 }
+.card__image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 .card__image img {
     @include tealshadow;
     flex: 1;
-    max-height: 270px;
-    max-width: 270px;
+    max-height: 300px;
+    max-width: 300px;
     border-radius: 50%;
 }
 .card__image:hover {
@@ -69,24 +73,30 @@
     min-height: 70px;
     align-items: flex-end;
     justify-content: center;
+    width: 80%;
 }
 .card__icons {
     display: flex;
     justify-content: space-between;
     width: 50%;
 }
-.card__icons i {
-    text-align: center;
-    padding: 10px;
-    font-size: 22px;
+.card__icons a {
+    text-decoration: none;
+    font-size: 24px;
+}
+.circle-icon {
     border-radius: 50%;
+    display: flex;
+    text-align: center;
     border: 2px solid $teal;
-    margin: 8px 0 0 8px;
+    padding: 8px;
 }
 .card__cv {
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 80%;
+
 }
 .card__cv h6 {
     font-size: 15px;
@@ -95,7 +105,7 @@
     margin-right: 2px;
 }
 .card__cv i {
-    margin-top: -13px;
+    margin-top: 8px;
     font-size: 25px;
     color: $teal;
 }
@@ -136,7 +146,29 @@
     font-size: 25px;
 }
 
-  
+@media (min-width: 320px) {
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: teal;
+        padding: 0;
+    }
+    .card__text {
+        width: 100%;
+        margin-right: 0;
+    }
+    .card__image img {
+        max-width: 170px;
+        padding-right: 0;
+    }
+}
+@media (min-width: 1175px) {
+    .card {
+        background-color: palegreen;
+    }
+}
+
   
   
   

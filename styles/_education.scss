@@ -58,3 +58,17 @@
     flex-direction: column;
     text-align: center;
 }
+@media (min-width: 320px) {
+    .education {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        width: 95%;
+        background-color: palegreen;
+    }
+    .education__first, 
+    .education__last  {
+        width: 95%;
+    }
+}
