@@ -17,7 +17,7 @@
   justify-content: center;
 }
 .carousel  {
-  width: 60%;
+  width: 100%;
 }
 .websites__title h2 {
   @include title;
@@ -49,3 +49,5 @@
   color: $teal;
   transform: rotate(360deg);
 }
+
+

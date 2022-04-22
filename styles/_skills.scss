@@ -26,7 +26,7 @@
 .about__skillbox {
     display: inline-flex;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 60%;
@@ -58,12 +58,6 @@
 .about__skill:hover {
     transform: scale(1.1);
     transition: 0.5s;
-}
-@media (min-width: 320px) {
-    .containerskills {
-        padding: 0;
-        background-color: palegreen;
-    }
 }
 
 

@@ -12,20 +12,20 @@
 }
 .card {
     @include tealshadow;
-    width: 60%;
+    width: 90%;
     min-height: 550px;
     display: flex;
+    justify-content: center;
     background-color: $blackish;
-    flex-direction: row;
+    flex-direction: column;
     display: flex;
     padding-left: 40px;
     align-items: center;
     border-radius: 10px;
 }
 .card__text {
-    margin-right: 25px;
     width: 100%;
-    padding: 10px 10px 10px 25px;
+    padding: 30px 25px 30px 25px;
     border-top-left-radius: var(--border-radius);
     border-bottom-left-radius: var(--border-radius);
     border-right: 1px solid var(--dark-red-color);
@@ -56,10 +56,10 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-bottom: 20px;
 }
 .card__image img {
     @include tealshadow;
-    flex: 1;
     max-height: 300px;
     max-width: 300px;
     border-radius: 50%;
@@ -73,7 +73,6 @@
     min-height: 70px;
     align-items: flex-end;
     justify-content: center;
-    width: 80%;
 }
 .card__icons {
     display: flex;
@@ -95,8 +94,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 80%;
-
+    width: 100%;
 }
 .card__cv h6 {
     font-size: 15px;
@@ -161,11 +159,6 @@
     .card__image img {
         max-width: 170px;
         padding-right: 0;
-    }
-}
-@media (min-width: 1175px) {
-    .card {
-        background-color: palegreen;
     }
 }
 
