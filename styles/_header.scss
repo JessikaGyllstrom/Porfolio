@@ -86,7 +86,6 @@ nav img:hover {
     display: block;
     z-index: 98;
     background-color: $blackish;
-
     padding-top: 140px;
 
     a {
@@ -112,6 +111,7 @@ nav img:hover {
 .menu a:hover {
     color: $teal;
 }
+  
 @media (min-width: 768px) {
     .hamburger {
         display: none;

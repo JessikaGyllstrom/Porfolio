@@ -24,3 +24,8 @@
     color: $blackish;
     padding-top: 10px;
 }
+@media screen and (min-width: 1174px) {
+    .about {
+        width: 75%;
+    }
+}

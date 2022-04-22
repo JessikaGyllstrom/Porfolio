@@ -36,10 +36,10 @@
     padding: 60px 40px 60px 40px;
 }
 @mixin titlepadd-lg {
-    padding: 30px 0px 30px 0px;
+    padding: 30px 0px 10px 0px;
 }
 @mixin containerpadd-md {  
-    padding: 20px 40px 70px 40px;   
+    padding: 20px;  
 }
 @mixin tealshadow {
     box-shadow: 0px 0px 5px 5px $teal;

@@ -1,36 +1,35 @@
 @use 'mixins';
 
 .education-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  @include containerpadd-md;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 .education__titlebox {
     @include titlepadd-lg;
-    display: flex;
     justify-content: center;
+    text-align: center;
     width: 100%;
 }
-.education__title {
-    display: flex;
-}
-.education__title h2 {
+.education__titlebox h2 {
     @include title;  
-}
+}   
 .education {
     @include tealshadow-s;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
     width: 90%;
-    padding: 40px 10px 20px 10px;
+    margin-top: 30px;
 }
 .education__first, 
 .education__last  {
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 .education__icon {
     display: flex;
@@ -45,7 +44,6 @@
 .education__courses h5 {
     @include titlepadd-lg;
 }
-
 .education {
     h6 {
         font-weight: 200;
@@ -60,3 +58,11 @@
     flex-direction: column;
     text-align: center;
 }
+@media screen and (min-width: 1174px) {
+    .education {
+        flex-direction: row;
+        width: 60%;
+        flex-wrap: wrap;
+    }
+}
+

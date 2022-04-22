@@ -2,7 +2,7 @@
 @use 'colors';
 
 .websites {
-  @include containerpadd-lg;
+  @include containerpadd-md;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -49,5 +49,21 @@
   color: $teal;
   transform: rotate(360deg);
 }
+@media (orientation: landscape) {
+  .carousel {
+        width: 90%;
+    }
+}
+@media screen and (min-width: 1174px) {
+  .carousel {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1374px) {
+.carousel {
+  width: 70%;
+  } 
+}
+
 
 
